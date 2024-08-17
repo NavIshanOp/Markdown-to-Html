@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown to HTML Converter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Markdown to HTML Converter</h1>
+
+        <div class="editor">
+            <textarea id="markdown-input" placeholder="Write your Markdown here..."></textarea>
+        </div>
+
+        <button id="convert-btn">Convert to HTML</button>
+        <button id="download-btn" disabled>Download HTML</button>
+
+        <div class="output-section">
+            <div class="output">
+                <h2>Converted HTML:</h2>
+                <iframe id="html-output" sandbox="allow-same-origin allow-scripts"></iframe>
+            </div>
+
+            <div class="styling-options">
+                <h2>Easy Styling Options</h2>
+                <label for="text-color">Text Color:</label>
+                <input type="color" id="text-color">
+
+                <label for="bg-color">Background Color:</label>
+                <input type="color" id="bg-color">
+
+                <label for="font-size">Font Size:</label>
+                <select id="font-size">
+                    <option value="16px">16px</option>
+                    <option value="18px">18px</option>
+                    <option value="20px">20px</option>
+                    <option value="24px">24px</option>
+                </select>
+
+                <label for="font-family">Font Family:</label>
+                <select id="font-family">
+                    <option value="Arial">Arial</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Courier New">Courier New</option>
+                </select>
+
+                <label for="text-align">Text Align:</label>
+                <select id="text-align">
+                    <option value="left">Left</option>
+                    <option value="center">Center</option>
+                    <option value="right">Right</option>
+                </select>
+
+                <label for="border">Border:</label>
+                <select id="border">
+                    <option value="none">None</option>
+                    <option value="1px solid black">Solid</option>
+                    <option value="1px dashed black">Dashed</option>
+                    <option value="1px dotted black">Dotted</option>
+                </select>
+
+                <label for="padding">Padding:</label>
+                <input type="range" id="padding" min="0" max="50" value="10">
+
+                <button id="apply-style">Apply Style</button>
+            </div>
+        </div>
+
+        <div class="custom-css">
+            <h2>Advanced Custom CSS</h2>
+            <textarea id="css-editor" placeholder="Write custom CSS here..."></textarea>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
