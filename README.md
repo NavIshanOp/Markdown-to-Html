@@ -25,7 +25,7 @@ This project provides a powerful Markdown to HTML converter that allows users to
 Clone the repository:
 
 ```bash
-git clone https://github.com/NavIshanOp/markdown-to-html-converter.git
+git clone https://github.com/NavIshanOp/Markdown-to-Html.git
 ```
 
 Navigate into the project directory:
