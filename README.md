@@ -31,7 +31,7 @@ git clone https://github.com/NavIshanOp/Markdown-to-Html.git
 Navigate into the project directory:
 
 ```bash
-cd markdown-to-html-converter
+cd Markdown-to-Html
 ```
 
 Install the necessary dependencies:
